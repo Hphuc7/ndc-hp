@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f4f0;
+}
+
+.logo {
+   width: 120px;
+	margin-left: 200px
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+	
+}
+
+nav ul li {
+    margin-left: 20px;	
+}
+
+nav ul li a {
+   text-decoration: none;
+	color: #383838;
+	
+}
+
+.text {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+.spm{
+	text-decoration: underline;
+	text-decoration-color: #c7462b;
+	text-decoration-thickness: 3px;
+	opacity: 0.5;
+}
+.text-content{
+	position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    color: white; 
+    font-size: 24px; 
+    font-weight: bold; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    z-index: 10;
+	margin-left: -500px;
+	
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #8c5f41;
+    color: white;
+    text-decoration: none;
+}
+
+.products {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-item {
+     border: 2px solid #c7462b;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product-item img {
+    width: 100px;
+    height: 100px;
+}
+
+.product-item p {
+    margin: 10px 0;
+}
+.product-item:hover {
+    transform: scale(1.05); /* Phóng to nhẹ khi hover */
+}
+
